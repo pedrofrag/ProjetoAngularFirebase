@@ -1,0 +1,17 @@
+<ion-row>
+  <ion-col size="6" *ngFor="let animal of animais">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ animal.nome }}</ion-card-title>
+        <ion-card-subtitle>Cor: {{ animal.cor }}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p (click)="onAdotarClick(animal)" style="cursor: pointer; color: #3880ff;">
+          Clique para adotar
+        </p>
+        <img [src]="animal.foto" alt="Foto de {{ animal.nome }}" style="width: 100%; border-radius: 8px;" />
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>

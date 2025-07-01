@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -14,7 +15,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,
+  ],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(),
